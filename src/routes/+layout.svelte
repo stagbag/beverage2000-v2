@@ -1,25 +1,63 @@
-<!--<script>
+<script>
+    
+        const tabList = $state([
+        { title: 'home', href:'/', color: 'var(--base-bg)', selected: false },
+        { title: 'portfolio', href:'/portfolio', color:'ghostwhite', selected: false},
+        { title: 'links', href:'/links', color:'honeydew', selected: false},
+        { title: 'blog', href:'/blog', color:'beige', selected: false},
+        { title: 'about', href:'/about', color:'oldlace', selected: false}
+    ]);
+
+    import Tabnav from './Tabnav.svelte';
     let { children } = $props();
-    let count= $state(0);
+    //let article = $state();
 
-    function increment() {
-        count += 1;
+
+
+</script>
+
+<main class="grid-container">
+
+    <header class="title">
+        <h1><a href="/">beverage2000</a></h1>
+    </header>
+
+    <Tabnav {tabList} />
+    
+    <aside class="sidenav reg">
+        <h3>sitemap</h3>
+        <div class="placeholder-s"></div>
+        <h4>latest updates</h4>
+        <div class="placeholder-s"></div>
+    </aside>
+
+    <b class="gutter"></b>
+
+    <article
+    class="content-main-container reg">
+        <div class="placeholder-l"></div>
+
+        <div class="content-main">
+
+            {@render children()}
+
+        </div>
+       
+ 
+    </article>
+
+    <b class="gutter"></b>
+
+    <footer class="bumper reg">
+        <h4>footer</h4>
+        <div class="placeholder-s"></div>
+    </footer>
+
+</main>
+
+<style>
+    .content-main-container {
+        background-color: var(--color-bg);
     }
-</script>-->
-
-<h1>Welcome to SvelteKit</h1>
-
-<!--<Nav />-->
-<nav>
-	<a href="/">home</a>
-    <a href="/portfolio">portfolio</a>
-	<a href="/about">about</a>
-    <a href="/blog">blog</a>
-</nav>
-
-<!--{@render children()}-->
-
-<footer>
-
-</footer>
+</style>
 
