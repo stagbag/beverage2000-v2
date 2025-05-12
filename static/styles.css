@@ -48,6 +48,7 @@ html {
     --linkv-text: yellowgreen;
 
     --grid-gap: 5px;
+    --gal-row-size: 200px;
 
 }
 
@@ -115,6 +116,7 @@ button {
 /* sidenav (aside) */
 .sidenav { 
     grid-column: 1;
+    justify-self: stretch;
 }
 
 /* FOOTER ("bumper") */

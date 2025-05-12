@@ -26,6 +26,9 @@
     
     <aside class="sidenav reg">
         <h3>sitemap</h3>
+        {#each tabList as link}
+        <a href={link.href}>{ link.title }</a>
+        {/each}
         <div class="placeholder-s"></div>
         <h4>latest updates</h4>
         <div class="placeholder-s"></div>
@@ -58,6 +61,16 @@
 <style>
     .content-main-container {
         background-color: var(--color-bg);
+    }
+    .sidenav a {
+        display: block;
+        margin: 0;
+        color: var(--blue-bg);
+        width:100%;
+    }
+    .sidenav a:hover {
+        background-color: black;
+        color: var(--linkv-text);
     }
 </style>
 
