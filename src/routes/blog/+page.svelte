@@ -1,5 +1,6 @@
 <script>
-    let { data } = $props();
+   let { data } = $props();
+   //export let posts = [];
 </script>
 
 <h1>blog</h1>
