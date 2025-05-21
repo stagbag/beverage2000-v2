@@ -21,7 +21,7 @@
 <main class="grid-container">
 
     <header class="title">
-        <h1><a href="/">beverage2000</a></h1>
+        <h1><a href="/"><img src="render2.png" alt="beverage2000"></a></h1>
     </header>
 
     <Tabnav {tabList} />
@@ -59,6 +59,11 @@
 </main>
 
 <style>
+    h1 img {
+        width:100%;
+        height:48px;
+        object-fit: fill;
+    }
     .content-main-container {
         background-color: var(--color-bg);
     }
@@ -71,6 +76,12 @@
     .sidenav a:hover {
         background-color: black;
         color: var(--linkv-text);
+    }
+
+    /* sidenav (aside) */
+    .sidenav { 
+        grid-column: 1;
+        justify-self: stretch;
     }
 </style>
 
