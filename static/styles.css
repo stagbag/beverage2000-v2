@@ -141,7 +141,7 @@ button {
 
     .grid-container {
         margin-left: var(--grid-gap);
-        margin-right: var(--grid-gap)x;
+        margin-right: var(--grid-gap);
     }
 
 }
@@ -157,5 +157,9 @@ button {
         border-left: none;
         border-right: none;
     }
+	.grid-container {
+    	grid-template-columns: minmax(100px, 1fr) var(--grid-gap) 4fr;
+    	grid-template-rows: auto 1fr var(--grid-gap) 1fr;
+	}
 }
 

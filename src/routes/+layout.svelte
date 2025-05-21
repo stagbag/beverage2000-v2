@@ -2,7 +2,9 @@
     
         const tabList = $state([
         { title: 'home', href:'/', color: 'var(--base-bg)', selected: false },
+		{ title: 'films', href:'/films', color:'var(--base-bg)', selected: false },
         { title: 'portfolio', href:'/portfolio', color:'ghostwhite', selected: false},
+        { title: 'design', href:'/design', color:'aliceblue', selected: false},
         { title: 'links', href:'/links', color:'honeydew', selected: false},
         { title: 'blog', href:'/blog', color:'beige', selected: false},
         { title: 'about', href:'/about', color:'oldlace', selected: false}
@@ -38,7 +40,6 @@
 
     <article
     class="content-main-container reg">
-        <div class="placeholder-l"></div>
 
         <div class="content-main">
 
@@ -53,7 +54,6 @@
 
     <footer class="bumper reg">
         <h4>footer</h4>
-        <div class="placeholder-s"></div>
     </footer>
 
 </main>

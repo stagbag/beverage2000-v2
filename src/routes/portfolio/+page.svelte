@@ -1,8 +1,6 @@
 
 <script>
 
-import Gallery from '../Gallery.svelte';
-
 
 </script>
 
@@ -10,4 +8,3 @@ import Gallery from '../Gallery.svelte';
 <p>portfolio goes here.</p>
 
 
-<Gallery/>
